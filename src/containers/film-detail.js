@@ -8,10 +8,11 @@ class FilmDetail extends Component {
     }
     return (
       <div>
-        <h4> Details For : </h4>
+        <h4> Details For : <div> <b>{this.props.film.title}</b> </div> </h4>
         <hr />
-        <div> <b>{this.props.film.title}</b> </div>
+
         <div> Actor: {this.props.film.actor} </div>
+        <div> Rating: {this.props.film.rating} </div>
       </div>
     );
   }
